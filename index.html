@@ -4,21 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quote Generator</title>
+    <!-- fav icon -->
     <link
       rel="shortcut icon"
-      href="https://www.google.com/s2/favicons?domain=codepen.io"
+      href="https://www.google.com/s2/favicons?domain=https://random.org"
       type="image/x-icon"
     />
+    <!-- Font Montserrat-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <main>
+      <section class="quote-container" id="quote-container">
+        <figure>
+          <!-- Quote -->
+          <blockquote class="quote-text">
+            <i class="fas fa-quote-left"></i>
+            <q id="quote"></q>
+          </blockquote>
+
+          <!-- Author -->
+          <figcaption class="quote-author">
+            <span id="author"></span>
+          </figcaption>
+        </figure>
+
+        <!-- Buttons -->
+        <div class="button-container">
+          <button class="btn twitter-button" id="twitter" title="Tweet This!">
+            <i class="fab fa-twitter"></i>
+          </button>
+          <button class="btn" id="new-quote">New Quote</button>
+        </div>
+      </section>
+
+      <!-- loader -->
+      <div class="loader" id="loader"></div>
+    </main>
+    <!-- script -->
     <script src="script.js"></script>
+    <!-- if api goes down use local-->
+    <!-- <script src="quotes.js"></script> -->
   </body>
 </html>
